@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>JS Form Validate v.1.0.0</title>
+    </head>
+    <body>
+        <section class="registration">
+            <form action="#" method="POST" class="registration__form" name="registration__form">
+                <div class="registration__form_name-surname">
+                    <div class="registration__form_name">
+                        <input
+                            type="text"
+                            name="user_name"
+                            class="user_name"
+                            id="user_name"
+                            tabindex="1"
+                        />
+                        <label for="user_name" class="label_user_name"
+                            >Name</label
+                        >
+                        <span class="user_name_error">Incorrect Name</span>
+                    </div>
+
+                    <div class="registration__form_surname">
+                        <input
+                            type="text"
+                            name="user_surname"
+                            id="user_surname"
+                            class="user_surname"
+                            tabindex="2"
+                        />
+                        <label for="user_surname" class="label_user_surname"
+                            >Surname</label
+                        >
+                        <span class="user_surname_error"
+                            >Incorrect Surname</span
+                        >
+                    </div>
+                </div>
+
+                <div class="registration__form_email">
+                    <input
+                        type="email"
+                        name="user_email"
+                        id="user_email"
+                        class="user_email"
+                        tabindex="3"
+                    />
+                    <label for="user_email" class="label_user_email"
+                        >E-mail</label
+                    >
+                    <span class="user_email_error">Incorrect E-mail</span>
+                </div>
+
+                <div class="registration__form_pass">
+                    <div class="registration__form_password">
+                        <input
+                            type="password"
+                            name="user_password"
+                            id="user_password"
+                            class="user_password"
+                            tabindex="4"
+                        />
+                        <label for="user_password" class="label_user_password"
+                            >Password</label
+                        >
+                        <span class="user_password_error"
+                            >Min. length 6 char.</span
+                        >
+                    </div>
+
+                    <div class="registration__form_comfirm-pswrd">
+                        <input
+                            type="password"
+                            name="user_password-confirm"
+                            id="user_password-confirm"
+                            class="user_password-confirm"
+                            tabindex="5"
+                        />
+                        <label
+                            for="user_password-confirm"
+                            class="label_user_password-confirm"
+                            >Confirm password</label
+                        >
+                        <span class="user_password-confirm_error"
+                            >Incorrect Password</span
+                        >
+                    </div>
+                </div>
+
+                <div class="registration__form_submit" onclick="submitForm()">
+                    <span class="registration__form_submit-text">Submit</span>
+                </div>
+            </form>
+        </section>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
